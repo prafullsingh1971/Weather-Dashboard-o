@@ -2,7 +2,7 @@
 //  STATE
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const state = {
-    apiKey: localStorage.getItem('owm_api_key') || '',
+    apiKey:"830889ef400efb1f29e0ab83d5464aa7",
     unit: 'metric', // 'metric' | 'imperial'
     city: 'London',
     data: null, // current weather
