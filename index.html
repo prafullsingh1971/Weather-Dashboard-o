@@ -819,7 +819,7 @@
         // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
         //  🔑 INSERT YOUR OPENWEATHERMAP API KEY BELOW
         // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-        const MY_API_KEY = 'cbbd814ade5581267b354753418823f'; // <-- Replace with your key
+        const MY_API_KEY = 'a127db93dd0bd1ad7e3d1bee13675682'; // <-- Replace with your key
 
         // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
         //  STATE
@@ -836,7 +836,7 @@
         };
 
         // If no key in localStorage but we have a hardcoded one, save it
-        if (!localStorage.getItem('owm_api_key') && MY_API_KEY !== 'YOUR_API_KEY_HERE') {
+        if (!localStorage.getItem('owm_api_key') && MY_API_KEY !== 'a127db93dd0bd1ad7e3d1bee13675682') {
             localStorage.setItem('owm_api_key', MY_API_KEY);
         }
 
@@ -1145,7 +1145,7 @@
         //  MAIN LOAD FUNCTION
         // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
         async function loadWeather(city) {
-            if (!state.apiKey || state.apiKey === 'YOUR_API_KEY_HERE') {
+            if (!state.apiKey || state.apiKey === 'a127db93dd0bd1ad7e3d1bee13675682') {
                 weatherContent.innerHTML = renderError('Please set your OpenWeatherMap API key in the script (MY_API_KEY).');
                 return;
             }
